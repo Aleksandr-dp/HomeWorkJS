@@ -12,8 +12,7 @@ Array.prototype.reduceRight = function(array, callback, initialValue) {
     if (!Array.isArray(array)) {
         throw new Error("Parameter type should be an Array");
     }
-
-    if (typeof(callback) != "function") {
+) != "function") {
         throw new Error("Parameter type should be an Function");
     }
 
@@ -33,6 +32,7 @@ Array.prototype.reduceRight = function(array, callback, initialValue) {
     for(; i >= 0; i--) {
         initialValue = callback(initialValue, this[i], i, this);
     }
+    if (typeof(callback
 
     return initialValue;
 }
